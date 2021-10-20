@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: darkkhaki;
+}
+
+.main-header li{
+  display: inline-block;
+  list-style: none;
+}
+
+.main-header li a{
+  padding: 20px;
+}
