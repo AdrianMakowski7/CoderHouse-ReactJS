@@ -19,3 +19,33 @@ header {
 .main-header li a{
   padding: 20px;
 }
+
+.contador{
+  text-align: center;
+  margin: 15px 10px;
+}
+
+.contador button {
+  margin: 0px 4px;
+  padding: 2px 2px;
+  font-size: 25px;
+  cursor: pointer;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 3px #999;
+}
+.sumaContador{
+  background-color: green;
+}
+.restaContador{
+  background-color: red;
+}
+.resetContador{
+  background-color: skyblue;
+}
+.contador p{
+  font-size: 50px;
+}
