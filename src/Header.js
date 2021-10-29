@@ -5,9 +5,9 @@ import CartWidget from "./CartWidget"
 const Header =() => {
   return(
     <header class="main-header">
-      <h1>Buscador de Ciudades</h1>
-      <ItemListContainer nombre="Adrian" apellido="Makowski"/>
+      <h1 class="tituloPrincipal">TIENDA DE AUTOS</h1>
       <Navbar/>
+      <ItemListContainer nombre="Adrian" apellido="Makowski"/>
       <CartWidget/>
     </header>
   )

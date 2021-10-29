@@ -1,0 +1,6 @@
+[
+  { "id":1, "nombre": "Mustang", "img":"https://fotos.perfil.com/2020/04/06/trim/1280/720/ford-mustang-gt-50-935793.jpg", "stock":3},
+  { "id":2, "nombre": "Camaro", "img":"https://st.motortrend.com/uploads/sites/45/2015/10/2016-Chevrolet-Camaro-SS-V-8-homepage.jpg", "stock":1},
+  { "id":3, "nombre": "Challenger", "img":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dodge-challenger-srt-super-stock-2020-1600-03-1593769621.jpg", "stock":4},
+  { "id":4, "nombre": "Fusca", "img":"https://imagenes.montevideo.com.uy/imgnoticias/201601/_H571_90/545149.jpg", "stock":10}
+]
