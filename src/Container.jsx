@@ -21,16 +21,16 @@ const Container =()=>{
     }else{  
       return(
         <div>
-        <h3 class="tituloContainer">Disponibles!</h3>
-         <div class="container row card-columns">
+        <h3 className="tituloContainer">Disponibles!</h3>
+        <div className="container row card-columns">
         
       {autos.map((e, i)=> {
-        return  <div class="card" key={e.id}>
-                  <img class="card-img-top" src={e.img} alt="Card image cap"/>
-                  <div class="card-body">
-                    <h5 class="card-title">{e.nombre}</h5>
+        return  <div className="card" key={e.id}>
+                  <img className="card-img-top" src={e.img} alt="Card image cap"/>
+                  <div className="card-body">
+                    <h5 className="card-title">{e.nombre}</h5>
                     <Counter/>
-                    <button class="btn btn-primary">Detalle</button>
+                    <button className="btn btn-primary">Detalle</button>
                     
                   </div>
                 </div>
