@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-weight: 900;
 }
+
 body{
   color: white;
   background-color: #F0A500;
@@ -63,8 +64,10 @@ nav img{
   padding: 15px;
 }
 /****** contador *****/
+::placeholder { color: black; }
+
 .contador{
-    text-align: center;
+  text-align: center;
 }
 .contador input{
   width: 20%;

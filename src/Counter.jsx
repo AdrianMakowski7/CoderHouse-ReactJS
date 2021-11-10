@@ -1,23 +1,23 @@
 import {useState} from "react"
 
 const Counter = () => {
-  const[contador , setContador]=useState(0)
-  const contadorCero = 0
-  const sumarContador = () => {
-  setContador(contador + 1)
+  const[counter , setCounter]=useState(0)
+
+  const handleMinusClick =() =>{
+    setCounter((prevState) => prevState -1);
   }
-  const restarContador = () => {
-    setContador(contador - 1)
+  const handlePlusClick =() =>{
+    setCounter((prevState) => prevState +1);
   }
 
   return(
     <>
       <div className="contador">
-        <div className="contador1">
-          <button className="material-icons restaContador" onClick={restarContador} >remove</button>
-          <input type="text" placeholder={contador} disabled/>
-          <button className="material-icons sumaContador" onClick={sumarContador} >add</button>
-        </div>
+        <button className="material-icons restaContador" onClick={handleMinusClick} >remove</button>
+        <input type="text" placeholder={counter} disabled/>
+        <button className="material-icons sumaContador" onClick={handlePlusClick} >add</button>
+        <br />
+        <button>Add to cart</button>
       </div>
     </>
   )
