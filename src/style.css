@@ -1,10 +1,7 @@
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: 900;
 }
 
 body{
@@ -12,11 +9,10 @@ body{
   background-color: #F0A500;
 }
 header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 30px 10%;
+  padding: 2% 0%;
   background-color: #334756;
+  align-items: center;
+  justify-content: center;
 }
 header img{
   width: 500px;
@@ -33,15 +29,15 @@ header img{
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #d6c636, 0 -1px #d6c636, -2px 2px 0 #d6c636, 2px 2px 0 #d6c636, 1px 1px #efdc2a, 2px 2px #eeda22, 3px 3px #ecd717, 4px 4px #ead40e, 5px 5px #ffe600;
 }
 header .rest-header{
-  display: inline-flex;
-  float: right;
+  display: flex;
+  align-items: center;
+  font-size: 19px;
 }
 nav {
   background-color: #082032;
   display: flex;
-  padding: 0 auto;
   justify-content: center;
-  margin: 0 auto;
+  display: flex;
 }
 nav ul{
   margin: 0;
@@ -50,18 +46,32 @@ nav ul{
 nav li{
   padding: 0px;
   list-style: none;
-  display: inline-block;
+  display: flex;
 }
+
 nav img{
   width: 145px;
   height: 40px;
   padding: 5px;
-  margin: 7.5px 35px;
+  margin: 7.5px 6px;
   border-radius: 10px;
   background-color: white;
 }
-.main-header li a{
-  padding: 15px;
+
+.buscador{
+  text-align: center;
+  display: flex;
+  margin: 7.5px 6px;
+  padding: 1px;
+}
+.buscador input {
+  text-align: center;
+  border: 2px solid black;
+}
+.buscador button{
+  border:2px solid black;
+  background:rgb(2, 2, 36);
+  color:white;
 }
 /****** contador *****/
 ::placeholder { color: black; }
@@ -78,6 +88,8 @@ nav img{
 }
 .contador button {
   font-size: 18px;
+  padding: 2px 5px;
+  margin: 2px;
   cursor: pointer;	
   text-decoration: none;
   outline: none;
@@ -95,28 +107,54 @@ nav img{
   margin: auto;
   padding: auto;
 }
-.resetContador{
-  background-color: skyblue;
-}
 .contador p{
   font-size: 30px;
 }
-/***** Cards ******/
-.card{
-  width: 400px;
+
+.cartWidget{
   margin: 10px;
-  padding: 1px 4px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.shopping_cart {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: None
+}
+.shopping_cart:hover{
+  color: inherit;
+}
+.cartWidget:hover{
+  transform: scale(1.3);
+}
+/***** Cards Inicio ******/
+
+.card-id{
+  margin-top: 9px;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 3px;
   background-color: rgb(20, 20, 20);
   color: white;
   border-radius: 10px;
+  filter: drop-shadow(0 0 12px black);
 }
-.card h5{
+.card-id:focus{
+  filter: none;
+}
+.card-id h5{
   text-align: center;
 }
-.card img{
-  width: 390px;
-  height: 400px;
+.card-id a img{
+  border-radius: 10px;
+  opacity: 0.6;
 }
+.card-id a img:hover{
+  opacity: 1;
+} 
 .container{
   margin: 0 auto;
   display: block;
@@ -127,7 +165,7 @@ nav img{
   justify-content: center;
   font-size: 30px;
 }
-.card .btn-primary{
+.card-id .btn-primary{
   align-items: center;
   display: block;
   margin: 2px auto;
@@ -140,3 +178,68 @@ nav img{
   margin: 80px 70px;
   padding: 0;
 }
+/*****card-detail*****/
+.loading{
+  text-align: center;
+  font-size: 50px;
+}
+.card-detail{
+  padding: 12px;
+  margin: 13px;
+  border-radius: 30px;
+}
+.card-detail img{
+  border-radius: 60px;
+  filter: drop-shadow(0 0 12px black);
+  margin-bottom: 15px;
+}
+.card-detail .title{
+  font-size: 60px;
+  font-weight: bold; 
+  font-style: italic;
+  text-shadow:5px 5px 5px black;
+  text-transform: uppercase;
+}
+.card-detail table{
+  border-radius: 15px;
+}
+.card-detail .biography{
+  text-align: left;
+}
+.card-detail .appearance{
+  text-align: left;
+}
+.card-detail h6{
+  text-align: center;
+  font-weight: bold; 
+  text-decoration: underline;
+  font-size: 22px;
+}
+.card-detail span{
+  color: rgb(205, 205, 205);
+  font-size: 15px;
+}
+.card-detail p{
+  color: rgb(246, 255, 0);
+  font-size: 17px;
+}
+.card-detail .goback{
+  border-radius: 50px;
+  margin: 0;
+  padding: 0;
+  position: absolute; 
+  top: 250px; 
+  left: 66px;
+}
+.card-detail .goback{
+  background-color: #000000;
+  color: white;
+  font-size: 35px;
+}
+
+
+.row{
+  margin: 0; 
+  padding: 0;
+}
+

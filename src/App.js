@@ -1,28 +1,30 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import * as React from "react";
 import Header from "./Header"
 import Navbar from "./component/NavBar/Navbar";
-import Container from "./Container"
 import CardContainer from "./CardContainer";
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Home from './pages/Home';
-import DetailProduct from './pages/CardsDetail';
-
+import CardsDetail from './pages/CardDetail';
+import Cart from './pages/Cart';
+import { UserProvider } from './context/UserContext';
+import { CartProvider } from './context/CartContext';
 
 const App =() => {
   return(
-  <>
-  <BrowserRouter>
-      <Header/>
-      <Navbar/>
-      <Routes>
-        <Route path="CardContainer" element={<CardContainer/>} />
-        <Route path="/" element={<Home/>} />
-        <Route path="cards/:id" element={<DetailProduct/>} />
-
-      </Routes>
+    <BrowserRouter>
+      <UserProvider>
+      <CartProvider>
+        <Header/>
+        <Navbar/>
+        <Routes>
+          <Route path="Cart" element={<Cart/>} />
+          <Route path="CardContainer" element={<CardContainer/>} />
+          <Route path="/" element={<Home/>} />
+          <Route path="CardsDetail/:id" element={<CardsDetail/>} />
+        </Routes>
+      </CartProvider>
+      </UserProvider>
     </BrowserRouter>
-  </>
   )
 }
  

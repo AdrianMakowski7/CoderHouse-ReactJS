@@ -19,17 +19,19 @@ const CardContainer = () => {
   }, []);
 
   return(
-      <div className="row">
-      {superhero.map((e)=> {
-        return(
+      <div className="card-container">
+        <div className="row">
+        {superhero.map((e)=> {
+          return(
             <Card
-              key={e.id}
-              cardId={e.id}
-              name={e.name}
-              images={e.images.lg}
-              />
-        );  
-    })}
+            key={e.id}
+            cardId={e.id}
+            name={e.name}
+            images={e.images.lg}
+            />
+            );  
+          })}
+        </div>
       </div>
     );
 };
